@@ -1,0 +1,27 @@
+/*
+Vars
+*/
+
+$black: #000000;
+$white: #ffffff;
+$off-white: #BFBDB7;
+$red: #a0363a;
+$grey: #192029;
+
+//Bright Colours
+$green: #33FF72;
+$blue: #33FFF7;
+$yellow: #FEFF32;
+$bright-red: #FF3232;
+
+
+body {
+	font-family: nunito sans,sans-serif;
+	font-smoothing: antialiased;
+	color: #505050;
+	background-color: $grey;
+}
+
+/*
+Mixins 
+*/
