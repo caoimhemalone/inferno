@@ -331,14 +331,21 @@ header {
 
 	h2, h1 {
 		color: $white;
+		width: fit-content;
+		margin: auto;
 	}
 
 	h1 {
+		position: relative;
+
 		&:after {
 			content: "";
-			width: 30px;
-			height: 20px;
-			background-color: $bright-red;
+			width: 100%;
+			height: 10px;
+			background-color: $blue;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
 		}
 	}
 
@@ -642,7 +649,7 @@ header {
     	display: block;
     	color: $grey;
     	padding: 10px 5px;
-    	height: 305px;
+    	height: 97%;
 
     	@media only screen and (max-width: 767px) {
     		margin: 10px 0;
@@ -664,7 +671,7 @@ header {
 				img {
 					//width: 20%;
 					//margin: 0 auto 10px auto;
-					transition: 2s;
+					transition: 1s;
 					transform: translateY(-5px);
 				}
 			}

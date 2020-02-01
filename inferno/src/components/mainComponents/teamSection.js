@@ -1,5 +1,9 @@
 import React from 'react';
-import Nick from './images/nick.png';
+import team1 from './images/team1.png';
+import team2 from './images/team2.png';
+import team3 from './images/team3.png';
+import team4 from './images/team4.png';
+import team5 from './images/team5.png';
 
 
 function Team() {
@@ -10,28 +14,28 @@ function Team() {
 
 	   	<ul>
 	   		<li>
-	   			<img src={Nick} alt="Nick"/>
-	   			<span>Name</span>
+	   			<img src={team1} alt="Team Member"/>
+	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={Nick} alt="Nick"/>
-	   			<span>Name</span>
+	   			<img src={team2} alt="Team Member"/>
+	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={Nick} alt="Nick"/>
-	   			<span>Name</span>
+	   			<img src={team3} alt="Team Member"/>
+	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={Nick} alt="Nick"/>
-	   			<span>Name</span>
+	   			<img src={team4} alt="Team Member"/>
+	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={Nick} alt="Nick"/>
-	   			<span>Name</span>
+	   			<img src={team5} alt="Team Member"/>
+	   			{/*<span>Name</span> */}
 	   		</li>
 	   	</ul>
    </div>
