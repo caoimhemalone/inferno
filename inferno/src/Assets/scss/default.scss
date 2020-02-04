@@ -44,39 +44,34 @@ header {
 				width: 20%;
 				margin: auto;
 
-				&:hover {
-					a {
-						text-decoration: underline;
-					}
-				}
 
 				&:first-child {
-					&:hover {
-						a {
+					a {
+						&:hover {
 							color: $green;
 						}
 					}
 				}
 
 				&:nth-child(2) {
-					&:hover {
-						a {
+					a {
+						&:hover {
 							color: $blue;
 						}
 					}
 				}
 
 				&:nth-child(3) {
-					&:hover {
-						a {
+					a {
+						&:hover {
 							color: $bright-red;
 						}
 					}
 				}
 
 				&:nth-child(4) {
-					&:hover {
-						a {
+					a {
+						&:hover {
 							color: $yellow;
 						}
 					}
@@ -96,6 +91,8 @@ header {
 					-webkit-transition: all .3s;
 					-o-transition: all .3s;
 					transition: all .3s;
+					width: fit-content;
+					margin: auto;
 
 					&:after {
 						position: absolute;
@@ -109,6 +106,10 @@ header {
 						-webkit-transition: all .3s;
 						-o-transition: all .3s;
 						transition: all .3s;
+					}
+
+					&:hover {
+						text-decoration: underline;
 					}
 				}
 			}
@@ -130,6 +131,7 @@ header {
 					a {
 						color: $white;
 						text-decoration: none;
+						width: auto;
 					}
 				}
 			}
@@ -786,6 +788,12 @@ header {
 		}
 	}
 
+	.about-top {
+		width: 100%;
+		flex-wrap: wrap;
+		display: flex;
+	}
+
 	.about-left {
 		width: 50%;
 		float: left;
@@ -852,18 +860,21 @@ header {
 			.location {
 				a {
 					color: $green;
+					text-shadow: 2px 2px #e2dfdf69;
 				}
 			}
 
 			.email {
 				a {
 					color: $bright-red;
+					text-shadow: 2px 2px #e2dfdf69;
 				}
 			}
 
 			.phone {
 				a {
 					color: $blue;
+					text-shadow: 2px 2px #e2dfdf69;
 				}
 			}
 		}
@@ -884,7 +895,7 @@ header {
 
 footer {
 	width: 100%;
-	background: #151515;
+	background: $grey;
     padding-top: 72px;
     color: $white;
 
@@ -934,6 +945,12 @@ footer {
     		@media only screen and (max-width: 767px) {
 				width: 40%;
 			}
+    	}
+
+    	span {
+    		text-align: center;
+    		display: block;
+    		width: 100%;
     	}
     }
 }

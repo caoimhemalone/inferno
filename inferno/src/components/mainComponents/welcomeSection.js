@@ -7,9 +7,9 @@ function Welcome() {
     <div className="container">
       <div className="text-left">
         <h1>Welcome to Inferno</h1>
-        <p className="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+        <p className="intro">Currently Our Inferno Studio's are located on Dublin's Northside in Santry and Kilbarrack.</p>
 
-        <p>Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>At Inferno we encourage and coach our clients to be the best version of themselves they can be. To push beyond their limits and to explore extremes outside their comfort zones. We’re dedicated to helping men and women who struggle with weight loss, decreased energy and fitness levels to get back to levels they didn’t think possible. </p>
 
         <div className="book-btn">
           <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">Book Now</a>
