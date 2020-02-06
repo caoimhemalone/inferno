@@ -32,8 +32,9 @@ header {
 			padding: 0;
 			margin-bottom: 0;
 			display: flex;
-			width: auto;
+			width: 80%;
 			margin: auto;
+			float: left;
 
 			li {
 				display: inline-block;
@@ -113,27 +114,33 @@ header {
 					}
 				}
 			}
+		}
 
-			.signUp {
-				border-left: 2px solid #e16521;
-    			border-right: 2px solid #e4381c;
-    			border-bottom: 2px solid #e16521;
-    			border-top: 2px solid #e4381c;
-    			text-align: center;
-    			width: 120px;
-    			transition: 4s;
-    			border-radius: 0.25rem;
+		.signUp {
+			border-left: 2px solid #e16521;
+			border-right: 2px solid #e4381c;
+			border-bottom: 2px solid #e16521;
+			border-top: 2px solid #e4381c;
+			text-align: center;
+			width: 120px;
+			transition: 4s;
+			border-radius: 0.25rem;
+			float: right;
+			background-color: transparent;
 
-				&:hover {
-					background-image: linear-gradient(to right,#e16521 100%,#e4381C 0%),linear-gradient(to right,#e4381C 100%,#e16521 0%);
-					transition: 4s;
+			&:hover {
+				background-image: linear-gradient(to right,#e16521 100%,#e4381C 0%),linear-gradient(to right,#e4381C 100%,#e16521 0%);
+				transition: 4s;
 
-					a {
-						color: $white;
-						text-decoration: none;
-						width: auto;
-					}
+				a {
+					color: $white;
+					text-decoration: none;
+					width: auto;
 				}
+			}
+
+			a {
+				color: $white;
 			}
 		}
 	}
@@ -824,7 +831,7 @@ header {
 		ul {
 			padding: 0;
 			margin: 0;
-			width: 50%;
+			width: 70%;
 
 			li {
 				list-style: none;
@@ -854,8 +861,23 @@ header {
 		}
 
 		.info-container {
-			width: 70%;
+			width: 90%;
 			float: right;
+			padding-left: 10%;
+
+			.killester {
+				float: left;
+				width: 50%;
+			}
+
+			.santry {
+				float: right;
+				width: 50%;
+			}
+
+			h4 {
+				font-size: 14px;
+			}
 
 			.location {
 				a {
@@ -881,7 +903,7 @@ header {
 
 		.img-container {
 			display: flex;
-			width: 30%;
+			width: 10%;
 			float: left;
 
 			img {
@@ -954,3 +976,5 @@ footer {
     	}
     }
 }
+
+

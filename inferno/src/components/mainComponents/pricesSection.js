@@ -11,7 +11,7 @@ function Prices() {
    		<h2>Our Prices</h2>
    		<div className="row">
    			<div className="col-md-4 price-item">
-   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">
+   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">
    					<div className="img-container">
 	   					<img src={bike} alt="bike"/>
 	   				</div>
@@ -21,7 +21,7 @@ function Prices() {
    				</a>
    			</div>
    			<div className="col-md-4 price-item">
-   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">
+   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">
    					<div className="img-container">
 	   					<img src={row} alt="row"/>
 	   				</div>
@@ -31,7 +31,7 @@ function Prices() {
 	   			</a>
    			</div>
    			<div className="col-md-4 price-item">
-   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">
+   				<a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">
    					<div className="img-container">
 	   					<img src={ski} alt="ski"/>
 	   				</div>

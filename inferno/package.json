@@ -20,6 +20,10 @@
     "react-google-maps": "^9.4.5",
     "react-scripts": "3.3.0",
     "react-scroll": "^1.7.16",
+    "react-scroll-to-component": "^1.0.2",
+    "react-scrolling-nav": "^1.1.5",
+    "react-scrollspy": "^3.4.2",
+    "react-scrollspy-nav": "^1.2.2",
     "styled-components": "^5.0.0"
   },
   "scripts": {

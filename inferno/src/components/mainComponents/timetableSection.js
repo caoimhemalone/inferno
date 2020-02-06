@@ -1,13 +1,6 @@
 import React from 'react';
 import leftImage from './images/classes.jpg';
-var Scroll = require('react-scroll');
 
-var Link = Scroll.Link;
-var DirectLink = Scroll.DirectLink;
-var Element = Scroll.Element;
-var Events = Scroll.Events;
-var scroll = Scroll.animateScroll;
-var scrollSpy = Scroll.scrollSpy;
 
 
 function Timetable() {
@@ -30,7 +23,7 @@ function Timetable() {
                </div>
                <div className="right-container">
                   <div className="book-btn">
-                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">Book Now</a>
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
 
@@ -43,7 +36,7 @@ function Timetable() {
                </div>
                <div className="right-container">
                   <div className="book-btn">
-                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">Book Now</a>
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
 
@@ -56,7 +49,7 @@ function Timetable() {
                </div>
                <div className="right-container">
                   <div className="book-btn">
-                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">Book Now</a>
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
 
@@ -69,7 +62,7 @@ function Timetable() {
                </div>
                <div className="right-container">
                   <div className="book-btn">
-                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank">Book Now</a>
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
 

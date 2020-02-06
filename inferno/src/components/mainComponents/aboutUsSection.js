@@ -31,8 +31,16 @@ function About() {
                      </div>
 
                      <div className="info-container">
-                        <h3>Location</h3>
-                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank">Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
+                      <h3>Locations</h3>
+                      <div className="killester">
+                        <h4>Killester</h4>
+                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
+                      </div>
+
+                      <div className="santry">
+                        <h4>Santry</h4>
+                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
+                      </div>
                      </div>
                   </li>
 
@@ -43,7 +51,7 @@ function About() {
 
                      <div className="info-container">
                         <h3>Email</h3>
-                        <span className="email"><a href="mailto:infernofitnessteam@gmail.com" >infernofitnessteam@gmail.com</a></span>
+                        <span className="email"><a href="mailto:infernofitnessteam@gmail.com" rel="noopener noreferrer">infernofitnessteam@gmail.com</a></span>
                      </div>
                   </li>
 
@@ -54,7 +62,7 @@ function About() {
 
                      <div className="info-container">
                         <h3>Phone</h3>
-                        <span className="phone"><a href="tel:555-555-5555">000000000</a></span>
+                        <span className="phone"><a href="tel:555-555-5555" rel="noopener noreferrer">000000000</a></span>
                      </div>
                   </li>
                </ul>
