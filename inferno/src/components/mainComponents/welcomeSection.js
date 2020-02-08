@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
+
 import welcomeImage from './images/welcome.jpg';
 
 function Welcome() {
@@ -16,7 +18,9 @@ function Welcome() {
         </div>
       </div>
       <div className="image-right">
-        <img src={welcomeImage} alt="tablet"/>
+        <LazyLoad>
+          <img src={welcomeImage} alt="tablet"/>
+        </LazyLoad>
       </div>
     </div>
      

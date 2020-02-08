@@ -1,4 +1,6 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
+
 import team1 from './images/team1.png';
 import team2 from './images/team2.png';
 import team3 from './images/team3.png';
@@ -14,27 +16,37 @@ function Team() {
 
 	   	<ul>
 	   		<li>
-	   			<img src={team1} alt="Team Member"/>
+	   			<LazyLoad>
+		   			<img src={team1} alt="Team Member"/>
+		   		</LazyLoad>
 	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={team2} alt="Team Member"/>
+	   			<LazyLoad>
+		   			<img src={team2} alt="Team Member"/>
+		   		</LazyLoad>
 	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={team3} alt="Team Member"/>
+	   			<LazyLoad>
+		   			<img src={team3} alt="Team Member"/>
+		   		</LazyLoad>
 	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={team4} alt="Team Member"/>
+	   			<LazyLoad>
+		   			<img src={team4} alt="Team Member"/>
+		   		</LazyLoad>
 	   			{/*<span>Name</span> */}
 	   		</li>
 
 	   		<li>
-	   			<img src={team5} alt="Team Member"/>
+	   			<LazyLoad>
+		   			<img src={team5} alt="Team Member"/>
+		   		</LazyLoad>
 	   			{/*<span>Name</span> */}
 	   		</li>
 	   	</ul>

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 //components
 import Hero from './components/headerComponent/heroSection';
 import Video from './components/mainComponents/videoSection';
@@ -9,6 +10,7 @@ import Prices from './components/mainComponents/pricesSection';
 import Team from './components/mainComponents/teamSection';
 import Timetable from './components/mainComponents/timetableSection';
 import Test from './components/mainComponents/testimoniesSection';
+import Gallery from './components/mainComponents/gallerySection';
 import About from './components/mainComponents/aboutUsSection';
 import Footer from './components/footerComponent/footer';
 
@@ -20,6 +22,7 @@ import logo from './nav-logo.png';
 import './Assets/css/main.css';
 
 import ScrollspyNav from "react-scrollspy-nav";
+//import ScrollspyNavMobile from "react-scrollspy-nav";
 
 
 class App extends Component {
@@ -49,56 +52,39 @@ state = {
               </a>
             </div>
 
-            <div className="menu-wrap mobileNav">
+            <nav className="menu-wrap desktopNav">
               <input type="checkbox" className="toggler"/>
               <div className="hamburger"><div></div></div>
               <div className="menu">
                 <div>
                   <div>
-                    <ul>
-                      <li>
-                        Timetable
-                      </li>
-                      <li>
-                        Prices
-                      </li>
-                      <li>
-                        About Us
-                      </li>
-                      <li className="signUp">
-                        <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
-                      </li>
-                    </ul>
+                    <ScrollspyNav
+                      scrollTargetIds={["timetableNav", "pricesNav", "aboutNav", "galleryNav"]}
+                      offset={-100}
+                      activeNavClass="is-active"
+                      scrollDuration="1000"
+                      headerBackground="true">
+                      <ul>
+                        <li>
+                          <a href="#timetableNav">Timetable</a>
+                        </li>
+                        <li>
+                          <a href="#pricesNav">Prices</a>
+                        </li>
+                        <li>
+                          <a href="#aboutNav">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#galleryNav">Gallery</a>
+                        </li>
+                      </ul>
+                    </ScrollspyNav>
+                    <button className="signUp">
+                      <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
+                    </button>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <nav className="desktopNav">
-              <ScrollspyNav
-                scrollTargetIds={["timetableNav", "pricesNav", "aboutNav"]}
-                offset={-100}
-                activeNavClass="is-active"
-                scrollDuration="1000"
-                headerBackground="true">
-                <ul>
-                  <li>
-                    <a href="#timetableNav">Timetable</a>
-                  </li>
-                  <li>
-                    <a href="#pricesNav">Prices</a>
-                  </li>
-                  <li>
-                    <a href="#aboutNav">About Us</a>
-                  </li>
-                  <li>
-                    <a>Gallery</a>
-                  </li>
-                </ul>
-              </ScrollspyNav>
-              <button className="signUp">
-                <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
-              </button>
             </nav>
           </header>
         </div>
@@ -116,6 +102,7 @@ state = {
           <div id="pricesNav"><Prices /></div>
           <Test />
           <div id="aboutNav"><About /></div>
+          <div id="galleryNav"><Gallery /></div>
 
           <Footer />
         </div>

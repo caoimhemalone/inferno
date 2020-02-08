@@ -34,7 +34,7 @@ function About() {
                       <h3>Locations</h3>
                       <div className="killester">
                         <h4>Killester</h4>
-                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
+                        <span className="location"><a href="https://goo.gl/maps/TCyxzKms88oAPPpJ9" target="_blank" rel="noopener noreferrer">Unit 3, Howth Junction Business Park,<br/> Kilbarrack,<br/> Dublin, D05 AX70 </a></span>
                       </div>
 
                       <div className="santry">
@@ -62,7 +62,7 @@ function About() {
 
                      <div className="info-container">
                         <h3>Phone</h3>
-                        <span className="phone"><a href="tel:555-555-5555" rel="noopener noreferrer">000000000</a></span>
+                        <span className="phone"><a href="tel:(01) 839 4071" rel="noopener noreferrer">(01) 839 4071</a></span>
                      </div>
                   </li>
                </ul>
