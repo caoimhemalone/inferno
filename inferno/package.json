@@ -26,7 +26,9 @@
     "react-scrolling-nav": "^1.1.5",
     "react-scrollspy": "^3.4.2",
     "react-scrollspy-nav": "^1.2.2",
-    "styled-components": "^5.0.0"
+    "redux": "^4.0.5",
+    "styled-components": "^5.0.0",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -55,5 +57,6 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2"
-  }
+  },
+  "homepage": "."
 }

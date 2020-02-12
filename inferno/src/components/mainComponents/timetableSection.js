@@ -16,10 +16,24 @@ function Timetable() {
       </div>
       <div className="classesRight">
          <ul>
+            <h2>Santry</h2>
             <li>
                <div className="left-container">
                   <div className="day">Monday</div>
-                  <div className="time">11:00am, 1:00pm, 5:00pm</div>
+                  <div className="time">6:00am, 10:00am, 6:30pm, 7:30pm</div>
+               </div>
+               <div className="right-container">
+                  <div className="book-btn">
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
+                  </div>
+               </div>
+
+            </li>
+
+            <li>
+               <div className="left-container">
+                  <div className="day">Tuesday</div>
+                  <div className="time">1:00pm</div>
                </div>
                <div className="right-container">
                   <div className="book-btn">
@@ -32,7 +46,7 @@ function Timetable() {
             <li>
                <div className="left-container">
                   <div className="day">Wednesday</div>
-                  <div className="time">10:00am, 3:00pm, 7:00pm</div>
+                  <div className="time">6:00am, 10:00am</div>
                </div>
                <div className="right-container">
                   <div className="book-btn">
@@ -40,32 +54,42 @@ function Timetable() {
                   </div>
                </div>
 
+            </li>
+
+            <li>
+               <div className="left-container">
+                  <div className="day">Thursday</div>
+                  <div className="time">1:00pm</div>
+               </div>
+               <div className="right-container">
+                  <div className="book-btn">
+                     <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
+                  </div>
+               </div>
             </li>
 
             <li>
                <div className="left-container">
                   <div className="day">Friday</div>
-                  <div className="time">10:00am, 11:00am, 1:00pm, 5:00pm, 8:00pm</div>
+                  <div className="time">6:00am, 10:00am, 6:30pm, 7:30pm</div>
                </div>
                <div className="right-container">
                   <div className="book-btn">
                      <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
-
             </li>
 
             <li>
                <div className="left-container">
-                  <div className="day">Saturday</div>
-                  <div className="time">11:00am, 12:00pm 1:00pm, 2:00pm</div>
+                  <div className="day">Saturday & Sunday</div>
+                  <div className="time">9:00am, 10:00am</div>
                </div>
                <div className="right-container">
                   <div className="book-btn">
                      <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
                   </div>
                </div>
-
             </li>
          </ul>
       </div>

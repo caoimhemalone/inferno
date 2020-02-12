@@ -96,11 +96,11 @@ state = {
           <Welcome />
 
           <Polar />
-          <Video />
           <div id="timetableNav"><Timetable /></div>
           <Team />
           <div id="pricesNav"><Prices /></div>
           <Test />
+          <Video />
           <div id="aboutNav"><About /></div>
           <div id="galleryNav"><Gallery /></div>
 

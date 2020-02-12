@@ -422,6 +422,7 @@ header {
 		float: left;
 		color: $white;
 		align-self: center;
+		padding-right: 4%;
 
 		@media only screen and (max-width: 767px) {
 			width: 100%;
@@ -453,10 +454,30 @@ header {
 
 		@media only screen and (max-width: 767px) {
 			width: 100%;
+			padding: 0; 
 		}
 
 		img {
 			width: 100%;
+		}
+
+		.video-react-fluid {
+			display: flex;
+			height: 350px;
+			padding-top: 0!important;
+		}
+
+		.video-react-poster {
+			background-size: cover;
+		}
+
+		.video-react .video-react-big-play-button {
+			position: relative;
+			top: unset;
+			align-self: center;
+			left: unset;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
@@ -485,31 +506,12 @@ header {
 	}
 }
 
-.video-test-section {
-	text-align: center;
-
-	.row {
-		margin: 0;
-	}
-
-	.video-item {
-		height: 160px;
-		background-color: rgba(0,0,0,0.5);
-
-		&:hover {
-			border-bottom: 5px solid $bright-red;
-			margin: 0 -5px;
-			cursor: pointer;
-			background-color: $black;
-		}
-	}
-}
 
 .timetable-section {
 	background-color: $white;
 	width: 100%;
 	display: flex;
-	height: 600px;
+	height: 750px;
 
 	@media only screen and (max-width: 767px) {
 		flex-wrap: wrap;
@@ -565,10 +567,17 @@ header {
 			width: 100%;
 		}
 
+		h2 {
+			width: fit-content;
+			margin-bottom: 4%;
+			border-bottom: 5px solid $green;
+		}
+
 		ul {
-			padding: 145px 6% 145px 6%;
+			padding: 0 6% 0 6%;
 			align-self: center;
 			width: 100%;
+			margin-bottom: 0;
 
 			@media only screen and (max-width: 767px) {
 				padding: 10% 6%;
@@ -582,6 +591,11 @@ header {
 				display: flex;
 				padding-bottom: 20px;
     			margin-bottom: 25px;
+
+	            &:last-child {
+	                margin-bottom: 0;
+	                padding-bottom: 0;
+	            }
 
 				.left-container {
 					float: left;
@@ -802,8 +816,9 @@ header {
 }
 
 .testimony-section {
-	padding: 24px 0;
+	padding: 24px 0 0 0;
 	color: $white;
+	border-top: 5px solid $bright-red;
 
 	.container {
 		padding: 25px 0;
@@ -846,6 +861,52 @@ header {
 			position: absolute;
 			bottom: 0;
 			left: 0;
+		}
+	}
+}
+
+.video-test-section {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 1%;
+	border-bottom: 5px solid $bright-red;
+	//background-color: $white;
+
+	.row {
+		margin: 0;
+	}
+
+	h2 {
+		margin-top: 2%;
+		margin-bottom: 0;
+	}
+
+	.video-item {
+		//height: 160px;
+		//background-color: rgba(0,0,0,0.5);
+		padding: 2%;
+
+		&:hover {
+			// border-bottom: 5px solid $bright-red;
+			//margin: 0 -5px;
+			//cursor: pointer;
+			//background-color: $black;
+		}
+
+		.video-react-fluid {
+			display: flex;
+			height: 350px;
+			padding-top: 0!important;
+		}
+
+		.video-react .video-react-big-play-button {
+			position: relative;
+			top: unset;
+			align-self: center;
+			left: unset;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
