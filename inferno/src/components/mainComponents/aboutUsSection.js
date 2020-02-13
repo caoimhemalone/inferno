@@ -1,7 +1,9 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import location  from './images/placeholder.svg';
 import email from './images/letter.svg';
 import phone from './images/phone.svg';
+
 
 function About() {
   return (
@@ -18,8 +20,10 @@ function About() {
      </div>
       <div className="container bottom-container">
          <div className="about-left">
-            <div className="map" id="map">
-            </div>
+            <LazyLoad>
+              <div className="map" id="map">
+              </div>
+            </LazyLoad>
          </div>
 
          <div className="about-right">

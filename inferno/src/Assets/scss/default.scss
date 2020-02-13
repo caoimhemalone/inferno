@@ -999,6 +999,7 @@ header {
 
 		@media only screen and (max-width: 767px) {
 			width: 100%;
+			padding: 30px 10px;
 		}
 
 		h2 {
@@ -1008,7 +1009,11 @@ header {
 		ul {
 			padding: 0;
 			margin: 0;
-			width: 70%;
+			width: 90%;
+
+			@media only screen and (max-width: 767px) {
+				width: 100%;
+			}
 
 			li {
 				list-style: none;
@@ -1038,7 +1043,7 @@ header {
 		}
 
 		.info-container {
-			width: 90%;
+			width: 98%;
 			float: right;
 			padding-left: 10%;
 

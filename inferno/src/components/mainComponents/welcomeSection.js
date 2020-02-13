@@ -1,5 +1,4 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
 import { Player } from 'video-react';
 
 import welcomeVid from './video/main-video.mp4';
@@ -20,9 +19,6 @@ function Welcome() {
         </div>
       </div>
       <div className="image-right">
-        {/*<LazyLoad>
-          <img src={welcomeImage} alt="tablet"/>
-        </LazyLoad>*/}
          <Player
           playsInline
           poster={welcomeImage}
