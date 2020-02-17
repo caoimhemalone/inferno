@@ -12,7 +12,7 @@ function Hero() {
               <div className="col-lg-12">
                 <div className="hero-text">
                   <h2>Inferno Fitness</h2>
-                  <h1>SKI, BIKE, ROW</h1>
+                  <h1>HEATED CARDIO STUDIOS</h1>
                 </div>
               </div>
             </div>

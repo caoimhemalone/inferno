@@ -33,6 +33,7 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
+
     <!-- Maps -->
    <!--  <script>
       // Initialize and add the map
@@ -49,36 +50,36 @@
 
     <script type="text/javascript">
       function initMap() {
-    var locations = [
-      ['Santry', 53.394883, -6.250266, 1],
-      ['Killester', 53.390178, -6.154965, 2],
-    ];
+      var locations = [
+        ['Santry', 53.394883, -6.250266, 1],
+        ['Killester', 53.390178, -6.154965, 2],
+      ];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 11.5,
-      center: new google.maps.LatLng(53.392883, -6.200266),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var infowindow = new google.maps.InfoWindow();
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11.5,
+        center: new google.maps.LatLng(53.392883, -6.200266),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
       });
 
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
+      var infowindow = new google.maps.InfoWindow();
+
+      var marker, i;
+
+      for (i = 0; i < locations.length; i++) {  
+        marker = new google.maps.Marker({
+          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+          map: map
+        });
+
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          return function() {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map, marker);
+          }
+        })(marker, i));
+      }
     }
-  }
-  </script>
+    </script>
 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc6XeK7TYtWs7dU-MCj27PaGAYpi3MIc&callback=initMap">
@@ -97,8 +98,13 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script type="text/javascript">$( "#welcome" ).scroll(function() {
-    $( ".header-section" ).css('backgroundColor', 'red');
-});</script>
+   <!--  <script type="text/javascript">
+      $( "#welcome" ).scroll(function() {
+      $( ".header-section" ).css('backgroundColor', 'red');
+      });
+    </script> -->
+    
+    <!-- <script src="%PUBLIC_URL%/js/main.js"></script>
+    <script src="/js/main.js"></script> -->
   </body>
 </html>

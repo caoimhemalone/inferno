@@ -511,7 +511,7 @@ header {
 	background-color: $white;
 	width: 100%;
 	display: flex;
-	height: 750px;
+	height: 900px;
 
 	@media only screen and (max-width: 767px) {
 		flex-wrap: wrap;
@@ -520,7 +520,7 @@ header {
 
 	.classesLeft {
 		float: left;
-		width: 50%;
+		width: 40%;
 		background-size: cover;
 		display: flex;
 
@@ -560,7 +560,7 @@ header {
 
 	.classesRight {
 		float: right;
-		width: 50%;
+		width: 60%;
 		display: flex;
 
 		@media only screen and (max-width: 767px) {
@@ -571,6 +571,18 @@ header {
 			width: fit-content;
 			margin-bottom: 4%;
 			border-bottom: 5px solid $green;
+			float: left;
+			margin-right: 5%;
+
+			&:hover {
+				border-bottom: 5px solid $yellow;
+			}
+
+			a {
+				&:hover {
+					cursor: pointer;
+				}
+			}
 		}
 
 		ul {
@@ -620,6 +632,11 @@ header {
 					.time {
 						color: #8d8d8d;
 						font-size: 16px;
+						display: none;
+					}
+
+					.time.timetableShow {
+						display: block;
 					}
 				}
 
@@ -646,6 +663,14 @@ header {
 					}
 				}
 			}
+		}
+
+		.killester {
+			display: none;
+		}
+
+		.killester-heading {
+			border-bottom: unset;
 		}
 	}
 }
