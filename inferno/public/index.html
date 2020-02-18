@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139553932-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139553932-3');
+    </script>
+
+    <!-- Google Tag Manager -->
+   <!--  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5W4483R');</script>
+    --> <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -55,11 +74,13 @@
         ['Killester', 53.390178, -6.154965, 2],
       ];
 
-      var map = new google.maps.Map(document.getElementById('map'), {
+      var latlng = new google.maps.LatLng(53.392883, -6.200266); 
+      map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11.5,
-        center: new google.maps.LatLng(53.392883, -6.200266),
+        center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       });
+
 
       var infowindow = new google.maps.InfoWindow();
 
@@ -87,6 +108,10 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5W4483R"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -98,13 +123,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-   <!--  <script type="text/javascript">
-      $( "#welcome" ).scroll(function() {
-      $( ".header-section" ).css('backgroundColor', 'red');
-      });
-    </script> -->
-    
-    <!-- <script src="%PUBLIC_URL%/js/main.js"></script>
-    <script src="/js/main.js"></script> -->
+    <script type="text/javascript">
+      if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+      {
+         document.getElementsByTagName("BODY")[0].className += " safari";
+      }
+    </script>
   </body>
 </html>

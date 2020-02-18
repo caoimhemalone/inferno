@@ -28,13 +28,17 @@ class Timetable extends React.Component {
                </div>
                <div className="classesRight">
                   <ul>
-                     <h2 className="santry-heading"><a>Santry</a></h2>
-                     <h2 className="killester-heading"><a className={ this.state.condition ? "heading-active" : "heading-click" } toggleClassName={ this.handleClick }>Killester</a></h2>
                      <li>
                         <div className="left-container">
                            <div className="day">Monday</div>
-                           <div className="time santry timetableShow">6:00am, 10:00am, 6:30pm, 7:30pm</div>
-                            <div className="time killester">1:00pm, 6:00pm</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              6:00am, 10:00am, 6:30pm, 7:30pm
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              1:00pm, 6:00pm
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -47,8 +51,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Tuesday</div>
-                           <div className="time santry timetableShow">1:00pm</div>
-                           <div className="time killester">6:00am, 10:00am, 6:30pm, 7:30pm</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              1:00pm
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              6:00am, 10:00am, 6:30pm, 7:30pm
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -61,8 +71,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Wednesday</div>
-                           <div className="time santry timetableShow">6:00am, 10:00am</div>
-                           <div className="time killester">1:00pm</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              6:00am, 10:00am
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              1:00pm
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -75,8 +91,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Thursday</div>
-                           <div className="time santry timetableShow">1:00pm</div>
-                           <div className="time killester">6:00am, 10:00am, 6:30pm, 7:30pm</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              1:00pm
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              6:00am, 10:00am, 6:30pm, 7:30pm
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -88,8 +110,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Friday</div>
-                           <div className="time santry timetableShow">6:00am, 10:00am, 6:30pm, 7:30pm</div>
-                           <div className="time killester">1:00pm, 6:00pm</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              6:00am, 10:00am, 6:30pm, 7:30pm
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              1:00pm, 6:00pm
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -101,8 +129,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Saturday</div>
-                           <div className="time santry timetableShow">9:00am, 10:00am</div>
-                           <div className="time killester">8:00am, 9:00am</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              9:00am, 10:00am
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              8:00am, 9:00am
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">
@@ -114,8 +148,14 @@ class Timetable extends React.Component {
                      <li>
                         <div className="left-container">
                            <div className="day">Sunday</div>
-                           <div className="time santry timetableShow">9:00am, 10:00am</div>
-                           <div className="time killester">9:00am, 10:00am</div>
+                           <div className="time santry">
+                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              9:00am, 10:00am
+                           </div>
+                           <div className="time kilbarrack">
+                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              9:00am, 10:00am
+                           </div>
                         </div>
                         <div className="right-container">
                            <div className="book-btn">

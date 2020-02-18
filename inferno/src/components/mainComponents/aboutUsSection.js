@@ -20,10 +20,8 @@ function About() {
      </div>
       <div className="container bottom-container">
          <div className="about-left">
-            <LazyLoad>
-              <div className="map" id="map">
-              </div>
-            </LazyLoad>
+            <div className="map" id="map">
+            </div>
          </div>
 
          <div className="about-right">
@@ -36,14 +34,14 @@ function About() {
 
                      <div className="info-container">
                       <h3>Locations</h3>
-                      <div className="killester">
-                        <h4>Killester</h4>
-                        <span className="location"><a href="https://goo.gl/maps/TCyxzKms88oAPPpJ9" target="_blank" rel="noopener noreferrer">Unit 3, Howth Junction Business Park,<br/> Kilbarrack,<br/> Dublin, D05 AX70 </a></span>
+                      <div className="kilbarrack">
+                        <h4>Kilbarrack</h4>
+                        <span className="location"><a href="https://goo.gl/maps/TCyxzKms88oAPPpJ9" target="_blank" rel="noopener noreferrer">Ignite Health & Fitness, Unit 3, Howth Junction Business Park,<br/> Kilbarrack,<br/> Dublin, D05 AX70 </a></span>
                       </div>
 
                       <div className="santry">
                         <h4>Santry</h4>
-                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
+                        <span className="location"><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Bodynamics, Unit 3c Santry Hall Industrial Estate,<br/> Swords Road,<br/> Dublin 9 </a></span>
                       </div>
                      </div>
                   </li>

@@ -22,6 +22,20 @@ body {
 	background-color: $grey;
 }
 
+.safari {
+	.about-left {
+		//display: none;
+		.map {
+			background-image: url('../../safariMap.png');
+			background-position: center;
+		}
+	}
+
+	// .about-right {
+	// 	width: 100%;
+	// }
+}
+
 /*
 Mixins 
 */

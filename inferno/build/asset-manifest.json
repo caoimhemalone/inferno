@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.628b49c4.chunk.css",
-    "main.js": "./static/js/main.6b7ac6c9.chunk.js",
-    "main.js.map": "./static/js/main.6b7ac6c9.chunk.js.map",
+    "main.css": "./static/css/main.5acb6fdf.chunk.css",
+    "main.js": "./static/js/main.365fce73.chunk.js",
+    "main.js.map": "./static/js/main.365fce73.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.4b0c49a0.js",
     "runtime-main.js.map": "./static/js/runtime-main.4b0c49a0.js.map",
-    "static/js/2.630edd13.chunk.js": "./static/js/2.630edd13.chunk.js",
-    "static/js/2.630edd13.chunk.js.map": "./static/js/2.630edd13.chunk.js.map",
+    "static/js/2.ac1e7960.chunk.js": "./static/js/2.ac1e7960.chunk.js",
+    "static/js/2.ac1e7960.chunk.js.map": "./static/js/2.ac1e7960.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.5439c55b1b96e59966c85bca576e08dc.js": "./precache-manifest.5439c55b1b96e59966c85bca576e08dc.js",
+    "precache-manifest.8fd154cfd6c25c2472b3bf326ed3d14c.js": "./precache-manifest.8fd154cfd6c25c2472b3bf326ed3d14c.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.628b49c4.chunk.css.map": "./static/css/main.628b49c4.chunk.css.map",
-    "static/js/2.630edd13.chunk.js.LICENSE": "./static/js/2.630edd13.chunk.js.LICENSE",
+    "static/css/main.5acb6fdf.chunk.css.map": "./static/css/main.5acb6fdf.chunk.css.map",
+    "static/js/2.ac1e7960.chunk.js.LICENSE": "./static/js/2.ac1e7960.chunk.js.LICENSE",
     "static/media/1.jpg": "./static/media/1.9200b901.jpg",
     "static/media/10.jpg": "./static/media/10.ce661991.jpg",
     "static/media/11.jpg": "./static/media/11.4c3f4d47.jpg",
@@ -35,6 +35,7 @@
     "static/media/phone.svg": "./static/media/phone.c1635617.svg",
     "static/media/placeholder.svg": "./static/media/placeholder.4b0ff2f3.svg",
     "static/media/rowing-machine.svg": "./static/media/rowing-machine.0b557500.svg",
+    "static/media/main.css": "./static/media/safariMap.a7b5e165.png",
     "static/media/skiing.svg": "./static/media/skiing.8f7f560e.svg",
     "static/media/stationary-bike.svg": "./static/media/stationary-bike.2f55ef65.svg",
     "static/media/team1.png": "./static/media/team1.00333d0e.png",
@@ -50,8 +51,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.4b0c49a0.js",
-    "static/js/2.630edd13.chunk.js",
-    "static/css/main.628b49c4.chunk.css",
-    "static/js/main.6b7ac6c9.chunk.js"
+    "static/js/2.ac1e7960.chunk.js",
+    "static/css/main.5acb6fdf.chunk.css",
+    "static/js/main.365fce73.chunk.js"
   ]
 }

@@ -31,7 +31,7 @@ function Footer() {
    				<h3>Get Info</h3>
 
                <ul>
-                  <li>Locations: <a href="https://goo.gl/maps/TCyxzKms88oAPPpJ9" target="_blank" rel="noopener noreferrer">Killester, </a><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Santry</a></li>
+                  <li>Locations: <a href="https://goo.gl/maps/TCyxzKms88oAPPpJ9" target="_blank" rel="noopener noreferrer">Kilbarrack, </a><a href="https://goo.gl/maps/oEkvw6xqzCL2" target="_blank" rel="noopener noreferrer">Santry</a></li>
                   <li>Email: <a href="mailto:infernofitnessteam@gmail.com" rel="noopener noreferrer">infernofitnessteam@gmail.com</a></li>
                   <li>Phone: <a href="tel:(01) 839 4071" rel="noopener noreferrer">(01) 839 4071</a></li>
                </ul>
