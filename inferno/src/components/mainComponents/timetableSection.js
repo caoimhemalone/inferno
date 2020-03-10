@@ -150,7 +150,7 @@ class Timetable extends React.Component {
                            <div className="day">Sunday</div>
                            <div className="time santry">
                               <h2 className="santry-heading">Santry<em>:</em></h2>
-                              9:00am, 10:00am
+                              9:30am, 10:30am
                            </div>
                            <div className="time kilbarrack">
                               <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>

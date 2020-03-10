@@ -190,7 +190,6 @@ header {
 	}
 
 	@media only screen and (max-width: 767px) {
-
 		.menu-wrap {
 		  position: fixed;
 		  top: 0;
@@ -377,7 +376,7 @@ header {
 		}
 	}
 
-	h2, h1 {
+	h1 {
 		color: $white;
 		width: fit-content;
 		margin: auto;
@@ -395,6 +394,16 @@ header {
 			bottom: -5px;
 			left: 0;
 		}
+	}
+
+	span {
+		color: $white;
+		width: fit-content;
+		margin: auto;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.2;
+		display: block;
 	}
 
 	a {
