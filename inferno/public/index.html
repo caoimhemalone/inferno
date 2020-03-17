@@ -45,53 +45,13 @@
     -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900|Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css"/>
+    <!-- <link rel="stylesheet" href="https://video-react.github.io/assets/video-react.css"/> -->
 
 
     <title>Inferno Fitness</title>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
 
-
-    <!-- Maps -->
-    <script type="text/javascript">
-      function initMap() {
-      var locations = [
-        ['Santry', 53.394883, -6.250266, 1],
-        ['Killester', 53.390178, -6.154965, 2],
-      ];
-
-      var latlng = new google.maps.LatLng(53.392883, -6.200266); 
-      map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11.5,
-        center: latlng,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      });
-
-
-      var infowindow = new google.maps.InfoWindow();
-
-      var marker, i;
-
-      for (i = 0; i < locations.length; i++) {  
-        marker = new google.maps.Marker({
-          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-          map: map
-        });
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-          return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
-          }
-        })(marker, i));
-      }
-    }
-    </script>
-
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc6XeK7TYtWs7dU-MCj27PaGAYpi3MIc&callback=initMap">
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -99,7 +59,9 @@
     <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5W4483R"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
+    <div id="root">
+      <h1 style="color:#192029">HEATED CARDIO STUDIO</h1>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -116,5 +78,51 @@
          document.getElementsByTagName("BODY")[0].className += " safari";
       }
     </script>
+
+    <!-- Maps  -->
+   <script type="text/javascript">
+    function initMap() {
+    var locations = [
+      ['Santry', 53.394883, -6.250266, 1],
+      ['Killester', 53.390178, -6.154965, 2],
+    ];
+
+    // var latlng = new google.maps.LatLng(53.392883, -6.200266); 
+    // map = new google.maps.Map(document.getElementById('map'), {
+    //   zoom: 11.5,
+    //   center: latlng,
+    //   mapTypeId: google.maps.MapTypeId.ROADMAP
+    // });
+
+    var latlng = new google.maps.LatLng(53.392883, -6.200266);
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: latlng,
+      zoom: 11.5
+    });
+
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+  }
+  </script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFc6XeK7TYtWs7dU-MCj27PaGAYpi3MIc&callback=initMap">
+  </script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 import React from 'react';
-import LazyLoad from 'react-lazyload';
 import location  from './images/placeholder.svg';
 import email from './images/letter.svg';
 import phone from './images/phone.svg';

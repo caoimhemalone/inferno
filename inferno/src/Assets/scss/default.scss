@@ -380,9 +380,6 @@ header {
 		color: $white;
 		width: fit-content;
 		margin: auto;
-	}
-
-	h1 {
 		position: relative;
 
 		&:after {
@@ -399,7 +396,7 @@ header {
 	span {
 		color: $white;
 		width: fit-content;
-		margin: auto;
+		margin: 10px auto;
 		font-size: 2rem;
 		font-weight: 500;
 		line-height: 1.2;
@@ -412,6 +409,28 @@ header {
 		}
 	}
 
+}
+
+.covid-section {
+	background-color: yellow;
+	width: 100vw;
+	padding: 8%;
+	font-size: 18px;
+	text-align: center;
+
+	@media only screen and (max-width: 767px) {
+		padding: 35% 8% 10% 8%;
+	}
+
+	span {
+		width: 100%;
+		display: block;
+	}
+
+	a {
+		color: $bright-red;
+		font-size: 20px;
+	}
 }
 
 .welcome-section {
@@ -928,13 +947,6 @@ header {
 		//height: 160px;
 		//background-color: rgba(0,0,0,0.5);
 		padding: 2%;
-
-		&:hover {
-			// border-bottom: 5px solid $bright-red;
-			//margin: 0 -5px;
-			//cursor: pointer;
-			//background-color: $black;
-		}
 
 		.video-react-fluid {
 			display: flex;

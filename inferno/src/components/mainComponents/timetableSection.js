@@ -11,7 +11,7 @@ class Timetable extends React.Component {
    }
 
    componentDidMount(){
-      axios.get('/wp-json/wp/v2/timetable')
+      axios.get('/wp/wp-json/wp/v2/timetable')
       .then(res => this.setState({
          ttable: res.data,
          isLoaded: true

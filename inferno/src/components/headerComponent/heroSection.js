@@ -11,8 +11,8 @@ function Hero() {
             <div className="row">
               <div className="col-lg-12">
                 <div className="hero-text">
-                  <span>Inferno Fitness</span>
                   <h1>HEATED CARDIO STUDIOS</h1>
+                  <span>Inferno Fitness</span>
                 </div>
               </div>
             </div>

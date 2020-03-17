@@ -37,6 +37,7 @@ function Footer() {
                </ul>
    			</div>
    		</div>
+         <span className="icons">Web Development/Design & Photography by <a href="https://www.key-vah.com" target="_blank" title="key-vah.com" rel="noopener noreferrer">key-vah.com</a></span>
 
          <span className="icons">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span>
    	</div>
