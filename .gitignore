@@ -10,3 +10,7 @@ npm-debug.log
 yarn-error.log
 .DS_STORE
 /docker_example
+package.json
+package.lock.json
+inferno/build
+inferno/node_modules
