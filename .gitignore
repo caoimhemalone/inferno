@@ -16,3 +16,7 @@ package.lock.json
 /inferno/node_modules
 /inferno/package.json
 /inferno/package-lock.json
+inferno/build
+inferno/node_modules
+inferno/package.json
+inferno/package-lock.json
