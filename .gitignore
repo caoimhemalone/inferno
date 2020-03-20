@@ -12,7 +12,7 @@ yarn-error.log
 /docker_example
 package.json
 package.lock.json
-inferno/build
-inferno/node_modules
-inferno/package.json
-inferno/package-lock.json
+/inferno/build
+/inferno/node_modules
+/inferno/package.json
+/inferno/package-lock.json
