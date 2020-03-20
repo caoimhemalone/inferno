@@ -11,7 +11,7 @@ class Timetable extends React.Component {
    }
 
    componentDidMount(){
-      axios.get('/wp/wp-json/wp/v2/timetable')
+      axios.get('https://www.infernofitness.ie/wp/wp-json/wp/v2/timetable')
       .then(res => this.setState({
          ttable: res.data,
          isLoaded: true
@@ -51,14 +51,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Monday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_monday}</div>
                               ))}
                               {/* 6:00am, 10:00am, 6:30pm, 7:30pm */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_monday}</div>
                               ))}
@@ -77,14 +77,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Tuesday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_tuesday}</div>
                               ))}
                               {/* 1:00pm */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_tuesday}</div>
                               ))}
@@ -103,14 +103,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Wednesday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_wednesday}</div>
                               ))}
                               {/* 6:00am, 10:00am */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_wednesday}</div>
                               ))}
@@ -129,14 +129,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Thursday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_thursday}</div>
                               ))}
                               {/* 1:00pm */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_thursday}</div>
                               ))}
@@ -154,14 +154,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Friday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_friday}</div>
                               ))}
                               {/* 6:00am, 10:00am, 6:30pm, 7:30pm */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_friday}</div>
                               ))}
@@ -179,14 +179,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Saturday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_saturday}</div>
                               ))}
                               {/* 9:00am, 10:00am */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_saturday}</div>
                               ))}
@@ -204,14 +204,14 @@ class Timetable extends React.Component {
                         <div className="left-container">
                            <div className="day">Sunday</div>
                            <div className="time santry">
-                              <h2 className="santry-heading">Santry<em>:</em></h2>
+                              <span className="santry-heading">Santry<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.santry_sunday}</div>
                               ))}
                               {/* 9:30am, 10:30am */}
                            </div>
                            <div className="time kilbarrack">
-                              <h2 className="kilbarrack-heading">Kilbarrack<em>:</em></h2>
+                              <span className="kilbarrack-heading">Kilbarrack<em>:</em></span>
                               {ttable.map(timetable => (
                               <div key={timetable.id}>{timetable.acf.kilbarrack_sunday}</div>
                               ))}
