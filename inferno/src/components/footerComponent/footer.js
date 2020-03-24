@@ -1,5 +1,7 @@
 import React from 'react';
 import logo from './footer-logo.png';
+import FooterPrices from './footerPrices';
+
 
 function Footer() {
   return (
@@ -20,12 +22,7 @@ function Footer() {
    			</div>
    			<div className="col-md-2 footer-item">
    				<h3>Prices</h3>
-               <ul>
-                  <li><a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">12 Session Pack</a></li>
-                  <li><a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">7 Day Intro Pack</a></li>
-                  <li><a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">8 Session Pack</a></li>
-                  <li><a className="price-box" href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Unlimited Sessions</a></li>
-               </ul>
+               <FooterPrices />
    			</div>
    			<div className="col-md-3 footer-item">
    				<h3>Get Info</h3>

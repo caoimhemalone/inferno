@@ -1,34 +1,71 @@
 import React from 'react';
 import { Player } from 'video-react';
+import axios from 'axios';
+
 
 import welcomeVid from './video/main-video.mp4';
 import welcomeImage from './images/welcome.jpg';
 
-function Welcome() {
-  return (
-   <section className="welcome-section" id="welcome">
-    <div className="container">
-      <div className="text-left">
-        <h2>Welcome to Inferno</h2>
-        <p className="intro">Currently Our Inferno Studio's are located on Dublin's Northside in Santry and Kilbarrack.</p>
+class Welcome extends React.Component {
+  state = {
+    pagetable: {},
+    isLoaded: false
+  }  
 
-        <p>At Inferno we encourage and coach our clients to be the best version of themselves they can be. To push beyond their limits and to explore extremes outside their comfort zones. We’re dedicated to helping men and women who struggle with weight loss, decreased energy and fitness levels to get back to levels they didn’t think possible. </p>
+  componentDidMount(){
+      axios.get('https://www.infernofitness.ie/wp/wp-json/wp/v2/page_content')
+      .then(res => this.setState({
+        pagetable: res.data,
+        isLoaded: true
+      }))
+      .catch(err => console.log(err));
+  }
 
-        <div className="book-btn">
-          <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
-        </div>
-      </div>
-      <div className="image-right">
-         <Player
-          playsInline
-          poster={welcomeImage}
-          src={welcomeVid}
-        />
-      </div>
-    </div>
-     
-   </section>
-  );
+  constructor(props) {    
+    super(props)
+    this.state = {
+      condition: false
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick() {
+    this.setState({
+      condition: !this.state.condition
+    })
+  }
+  render() {
+    const {pagetable, isLoaded } = this.state;
+    if(isLoaded) {
+      return (
+        <section className="welcome-section" id="welcome">
+          <div className="container">
+            <div className="text-left">
+
+              {pagetable.map(pageContent => (
+                <h2 key={pageContent.id}>{pageContent.acf.welcome_heading}</h2>
+              ))}
+
+              {pagetable.map(pageContent => (
+                <p key={pageContent.id} dangerouslySetInnerHTML={{ __html: pageContent.acf.welcome_text }} />
+              ))}
+
+              <div className="book-btn">
+                <a href="https://inferno.wodify.com/OnlineSalesPortal/Home.aspx" target="_blank" rel="noopener noreferrer">Book Now</a>
+              </div>
+            </div>
+            <div className="image-right">
+              <Player
+                playsInline
+                poster={welcomeImage}
+                src={welcomeVid}
+              />
+            </div>
+          </div>
+          
+        </section>
+      );
+    } return null
+  }
 }
 
 export default Welcome;

@@ -230,7 +230,7 @@ class Timetable extends React.Component {
          );
       }
 
-      return <h3>Loading...</h3>
+      return null
    }
 }
 
