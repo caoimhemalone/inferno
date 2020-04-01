@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 //components
 import Hero from './components/headerComponent/heroSection';
 import Covid from './components/headerComponent/covid-19';

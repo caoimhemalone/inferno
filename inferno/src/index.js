@@ -2,6 +2,7 @@ import React from 'react';
 //import ReactDOM from 'react-dom';
 import App from './App';
 import {hydrate, render } from 'react-dom';
+//import {hydrate, render } from 'react-snapshot';
 import * as serviceWorker from './serviceWorker';
 
 //ReactDOM.render(<App />, document.getElementById('root'));
