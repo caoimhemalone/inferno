@@ -190,7 +190,6 @@ header {
 	}
 
 	@media only screen and (max-width: 767px) {
-
 		.menu-wrap {
 		  position: fixed;
 		  top: 0;
@@ -377,13 +376,10 @@ header {
 		}
 	}
 
-	h2, h1 {
+	h1 {
 		color: $white;
 		width: fit-content;
 		margin: auto;
-	}
-
-	h1 {
 		position: relative;
 
 		&:after {
@@ -397,12 +393,44 @@ header {
 		}
 	}
 
+	span {
+		color: $white;
+		width: fit-content;
+		margin: 10px auto;
+		font-size: 2rem;
+		font-weight: 500;
+		line-height: 1.2;
+		display: block;
+	}
+
 	a {
 		&:hover {
 			text-decoration: none;
 		}
 	}
 
+}
+
+.covid-section {
+	background-color: yellow;
+	width: 100vw;
+	padding: 8%;
+	font-size: 18px;
+	text-align: center;
+
+	@media only screen and (max-width: 767px) {
+		padding: 35% 8% 10% 8%;
+	}
+
+	span {
+		width: 100%;
+		display: block;
+	}
+
+	a {
+		color: $bright-red;
+		font-size: 20px;
+	}
 }
 
 .welcome-section {
@@ -511,7 +539,7 @@ header {
 	background-color: $white;
 	width: 100%;
 	display: flex;
-	height: 750px;
+	//height: 900px;
 
 	@media only screen and (max-width: 767px) {
 		flex-wrap: wrap;
@@ -520,7 +548,7 @@ header {
 
 	.classesLeft {
 		float: left;
-		width: 50%;
+		width: 40%;
 		background-size: cover;
 		display: flex;
 
@@ -560,17 +588,27 @@ header {
 
 	.classesRight {
 		float: right;
-		width: 50%;
+		width: 60%;
 		display: flex;
+		margin-top: 16px;
+		margin-bottom: 0;
 
 		@media only screen and (max-width: 767px) {
 			width: 100%;
 		}
 
-		h2 {
-			width: fit-content;
-			margin-bottom: 4%;
-			border-bottom: 5px solid $green;
+		.kilbarrack-heading, .santry-heading {
+			//width: 11%;
+			//margin-bottom: 3px;
+			//border-bottom: 3px solid $green;
+			float: left;
+			margin-right: 4%;
+			font-size: 18px;
+			display: block;
+
+			@media only screen and (max-width: 767px) {
+				width: auto;
+			}
 		}
 
 		ul {
@@ -580,7 +618,7 @@ header {
 			margin-bottom: 0;
 
 			@media only screen and (max-width: 767px) {
-				padding: 10% 6%;
+				padding: 16px 6% 0 6%;
 				margin-bottom: 0;
 			}
 
@@ -589,21 +627,36 @@ header {
 				border-bottom: 1px solid #8d8d8d;
 				color: $black;
 				display: flex;
-				padding-bottom: 20px;
-    			margin-bottom: 25px;
+				padding-bottom: 9px;
+    			margin-bottom: 9px;
+
+    			@media only screen and (max-width: 767px) {
+	            	flex-wrap: wrap;
+	            	margin-bottom: 0;
+	            	padding-top: 9px;
+	            }
+
+    			&:first-child {
+    				@media only screen and (max-width: 767px) {
+		            	padding-top: 0;
+		            }
+    			}
 
 	            &:last-child {
-	                margin-bottom: 0;
-	                padding-bottom: 0;
+	                //margin-bottom: 0;
+	                //padding-bottom: 0;
+	                border-bottom: unset;
 	            }
 
 				.left-container {
 					float: left;
 					width: 80%;
+					display: flex;
+					flex-wrap: wrap;
 
 					@media only screen and (max-width: 767px) {
-						width: 60%;
-						padding-right: 4%;
+						width: 100%;
+						padding-right: 0;
 					}
 
 					@media only screen and (min-width: 768px) and (max-width: 990px) {
@@ -613,13 +666,27 @@ header {
 					.day {
 						border-left: 5px solid $blue;
 						padding-left: 10px;
-						margin-bottom: 14px;
+						margin-bottom: 9px;
 						font-size: 16px;
+						width: 100%;
 					}
 
 					.time {
 						color: #8d8d8d;
 						font-size: 16px;
+						display: flex;
+						width: 100%;
+
+						em {
+							color: $green;
+							font-style: normal;
+						}
+
+						div {
+							display: block;
+							width: fit-content;
+							align-self: center;
+						}
 					}
 				}
 
@@ -629,7 +696,7 @@ header {
 					display: flex;
 
 					@media only screen and (max-width: 767px) {
-						width: 40%;
+						width: 100%;
 					}
 
 					@media only screen and (min-width: 768px) and (max-width: 990px) {
@@ -641,7 +708,8 @@ header {
 						width: 100%;
 
 						@media only screen and (max-width: 767px) {
-							width: 100%;
+							width: 60%;
+							margin: 9px auto 0 auto;
 						}
 					}
 				}
@@ -887,13 +955,6 @@ header {
 		//background-color: rgba(0,0,0,0.5);
 		padding: 2%;
 
-		&:hover {
-			// border-bottom: 5px solid $bright-red;
-			//margin: 0 -5px;
-			//cursor: pointer;
-			//background-color: $black;
-		}
-
 		.video-react-fluid {
 			display: flex;
 			height: 350px;
@@ -1051,7 +1112,7 @@ header {
 				width: 100%;
 			}
 
-			.killester {
+			.kilbarrack {
 				float: left;
 				width: 50%;
 

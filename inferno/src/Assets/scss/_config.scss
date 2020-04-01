@@ -17,9 +17,24 @@ $bright-red: #FF3232;
 
 body {
 	font-family: nunito sans,sans-serif;
-	font-smoothing: antialiased;
+	//font-smoothing: antialiased;
 	color: #505050;
 	background-color: $grey;
+	font-display: swap;
+}
+
+.safari {
+	.about-left {
+		//display: none;
+		.map {
+			background-image: url('../../safariMap.png');
+			background-position: center;
+		}
+	}
+
+	// .about-right {
+	// 	width: 100%;
+	// }
 }
 
 /*

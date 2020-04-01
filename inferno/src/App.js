@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-
 //components
 import Hero from './components/headerComponent/heroSection';
+import Covid from './components/headerComponent/covid-19';
 import Video from './components/mainComponents/videoSection';
 import Welcome from './components/mainComponents/welcomeSection';
 import Polar from './components/mainComponents/polarSection';
@@ -16,6 +16,7 @@ import Footer from './components/footerComponent/footer';
 
 //images
 import logo from './nav-logo.png';
+
 
 
 //includes
@@ -91,6 +92,8 @@ state = {
         
 
         <div>
+          <Covid />
+
           <Hero />
 
           <Welcome />
