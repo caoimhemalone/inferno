@@ -413,7 +413,7 @@ header {
 
 .covid-section {
 	background-color: yellow;
-	width: 100vw;
+	//width: 100vw;
 	padding: 8%;
 	font-size: 18px;
 	text-align: center;
@@ -430,6 +430,10 @@ header {
 	a {
 		color: $bright-red;
 		font-size: 20px;
+		// background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+		// -webkit-background-clip: text;
+		// background-clip: text;
+		// -webkit-text-fill-color: transparent;
 	}
 }
 

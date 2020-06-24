@@ -2,8 +2,6 @@ import React from 'react';
 import polar from './images/polar.png';
 import polarWhite from './images/blackwhite.jpg';
 
-
-
 function Polar() {
   return (
    <section className="polar-section" style={{backgroundImage: "url(" + polarWhite + ")"}}>

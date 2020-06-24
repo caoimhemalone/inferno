@@ -93,11 +93,11 @@ state = {
         
 
         <div>
-          <Covid />
+           <Covid />
 
           <Hero />
 
-          <Welcome />
+          {/* <Welcome /> */}
 
           <Polar />
           <div id="timetableNav"><Timetable /></div>

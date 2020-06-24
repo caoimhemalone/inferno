@@ -54,14 +54,9 @@ class Welcome extends React.Component {
               </div>
             </div>
             <div className="image-right">
-              <Player
-                playsInline
-                poster={welcomeImage}
-                src={welcomeVid}
-              />
+              <Player playsInline poster={welcomeImage} src={welcomeVid}/>
             </div>
-          </div>
-          
+          </div>   
         </section>
       );
     } return null
