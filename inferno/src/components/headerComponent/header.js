@@ -16,6 +16,7 @@ class Header extends React.Component {
     .catch(err => console.log(err));
   }
   
+  
   constructor(props) {    
   super(props)
   this.state = {
