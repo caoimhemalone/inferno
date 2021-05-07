@@ -3,7 +3,6 @@ import React, { Component } from "react";
 
 //components
 import Hero from './components/headerComponent/heroSection';
-import Covid from './components/headerComponent/covid-19';
 import Video from './components/mainComponents/videoSection';
 import Welcome from './components/mainComponents/welcomeSection';
 import Polar from './components/mainComponents/polarSection';
@@ -13,6 +12,7 @@ import Timetable from './components/mainComponents/timetableSection';
 import Test from './components/mainComponents/testimoniesSection';
 import Gallery from './components/mainComponents/gallerySection';
 import About from './components/mainComponents/aboutUsSection';
+import Contact from './components/mainComponents/contactUsSection';
 import Footer from './components/footerComponent/footer';
 
 //images
@@ -61,12 +61,15 @@ state = {
                 <div>
                   <div>
                     <ScrollspyNav
-                      scrollTargetIds={["timetableNav", "pricesNav", "aboutNav", "galleryNav"]}
+                      scrollTargetIds={["timetableNav", "pricesNav", "aboutNav", "galleryNav", "contactNav"]}
                       offset={-100}
                       activeNavClass="is-active"
                       scrollDuration="1000"
                       headerBackground="true">
                       <ul>
+                        <li>
+                          <a href="#aboutNav">About Us</a>
+                        </li>
                         <li>
                           <a href="#timetableNav">Timetable</a>
                         </li>
@@ -74,7 +77,7 @@ state = {
                           <a href="#pricesNav">Prices</a>
                         </li>
                         <li>
-                          <a href="#aboutNav">About Us</a>
+                          <a href="#contactNav">Contact</a>
                         </li>
                         <li>
                           <a href="#galleryNav">Gallery</a>
@@ -93,19 +96,19 @@ state = {
         
 
         <div>
-           <Covid />
-
           <Hero />
 
-          {/* <Welcome /> */}
+          <Welcome />
 
-          <Polar />
+          {/* <Polar />  */}
+          {/* Removed because it is taking on the welcom section class for some reason */}
+          <div id="aboutNav"><About /></div>
           <div id="timetableNav"><Timetable /></div>
+          <Video />
           <Team />
           <div id="pricesNav"><Prices /></div>
           <Test />
-          <Video />
-          <div id="aboutNav"><About /></div>
+          <div id="contactNav"><Contact /></div>
           <div id="galleryNav"><Gallery /></div>
 
           <Footer />

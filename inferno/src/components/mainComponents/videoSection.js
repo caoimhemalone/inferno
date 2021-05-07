@@ -9,6 +9,9 @@ function Video() {
   return (
    <section className="video-test-section">
    	<div className="row">
+		<div className="col-12">
+		   	<h2>A word from our Clients</h2>
+		</div>
    		<div className="col-md-6 video-item">
 		    <Player
 		      playsInline
